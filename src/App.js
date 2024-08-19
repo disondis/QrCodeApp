@@ -3,7 +3,7 @@ import { useState } from "react";
 
 
 function App() {
-  const [inputText, setInputText] = useState("");
+  const [inputText, setInputTexts] = useState("");
   const [img, setImg] = useState("");
   const [size, setSize] = useState("");
   const [loading, setLoading] = useState(false);
@@ -43,7 +43,7 @@ function App() {
           type="text"
           placeholder="Enter Data for QR code"
           value={inputText}
-          onChange={(e) => setInputText(e.target.value)}
+          onChange={(e) => setInputTexts(e.target.value)}
         />
         <label htmlFor="sizeinput" className="input-label">
           Enter image size (e.g., 150 for 150x150)
